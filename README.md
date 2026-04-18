@@ -44,7 +44,7 @@ Soft Skills
 
 
 
- 📬 Contact & Links
+ 📬 Contact 
 - 📧 Email: medinafi@sic.edu.ph  
 - 📘 Facebook: https:[//facebook.com/yourprofile ](https://www.facebook.com/its.lukeeeee)  
 - 💻 GitHub: https://github.com/medinafi
