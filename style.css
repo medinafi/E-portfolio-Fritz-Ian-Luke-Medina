@@ -1,0 +1,352 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth; /* smooth scroll */
+}
+
+/* ================= BODY ================= */
+body{
+  background:#0b0f19;
+  color:white;
+  line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 80px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:600;
+}
+
+.logo span{
+  color:#00f7ff;
+}
+
+.nav-links a{
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#00f7ff;
+  transform:scale(1.05);
+}
+
+/* ================= HOME ================= */
+#home{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:120px 80px;
+}
+
+.home-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  max-width:1100px;
+}
+
+.home-text h1{
+  font-size:40px;
+  margin-bottom:10px;
+  transition:0.3s;
+}
+
+.home-text h1:hover{
+  transform:scale(1.02);
+}
+
+.name{
+  color:#00f7ff;
+}
+
+.typing{
+  font-size:20px;
+  color:#aaa;
+  margin-bottom:25px;
+}
+
+.btn{
+  padding:12px 30px;
+  background:#00f7ff;
+  border:none;
+  border-radius:30px;
+  text-decoration:none;
+  color:black;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:0 10px 20px rgba(0,247,255,0.3);
+}
+
+.home-image img{
+  width:280px;
+  border-radius:50%;
+  border:4px solid #00f7ff;
+  box-shadow:0 0 40px rgba(0,247,255,0.3);
+  transition:0.4s;
+}
+
+.home-image img:hover{
+  transform:scale(1.05) rotate(2deg);
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:120px 80px;
+  text-align:center;
+}
+
+/* HEADINGS */
+h2{
+  font-size:30px;
+  margin-bottom:40px;
+}
+
+/* ================= ABOUT ME ================= */
+.about-box{
+  max-width:600px; /* smaller box */
+  margin:auto;
+  background:rgba(255,255,255,0.05);
+  padding:25px 30px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  transition:0.4s;
+}
+
+.about-box:hover{
+  transform:scale(1.02);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* ================= PROJECTS ================= */
+.projects{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#12182a;
+  padding:15px;
+  border-radius:12px;
+  width:250px;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card:hover img{
+  transform:scale(1.08);
+}
+
+/* ================= SKILLS ================= */
+.skills{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.skill{
+  background:#12182a;
+  padding:25px;
+  border-radius:12px;
+  width:180px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.skill i{
+  font-size:30px;
+  margin-bottom:10px;
+  color:#00f7ff;
+}
+
+.skill:hover{
+  transform:scale(1.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ================= GALLERY ================= */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  transition:0.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ================= CONTACT ================= */
+.contacts{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.contacts a{
+  font-size:26px;
+  color:white;
+  transition:0.3s;
+}
+
+.contacts a:hover{
+  color:#00f7ff;
+  transform:scale(1.2);
+}
+
+/* ================= FOOTER ================= */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#aaa;
+}
+
+/* ================= SCROLL REVEAL ================= */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px){
+
+  /* NAVBAR */
+  nav{
+    padding:15px 20px;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .nav-links{
+    margin-top:10px;
+  }
+
+  .nav-links a{
+    margin:10px;
+    display:inline-block;
+  }
+
+  /* HOME */
+  #home{
+    padding:100px 20px;
+  }
+
+  .home-container{
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+  }
+
+  .home-text h1{
+    font-size:26px;
+  }
+
+  .typing{
+    font-size:16px;
+  }
+
+  .home-image img{
+    width:200px;
+  }
+
+  /* SECTIONS */
+  section{
+    padding:80px 20px;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  /* ABOUT */
+  .about-box{
+    padding:20px;
+  }
+
+  /* PROJECTS */
+  .projects{
+    gap:20px;
+  }
+
+  .card{
+    width:100%;
+    max-width:300px;
+  }
+
+  /* SKILLS */
+  .skills{
+    gap:20px;
+  }
+
+  .skill{
+    width:45%;
+  }
+
+  /* GALLERY */
+  .gallery{
+    grid-template-columns:1fr 1fr;
+  }
+
+  /* CONTACT */
+  .contacts{
+    gap:20px;
+  }
+
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
