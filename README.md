@@ -5,6 +5,7 @@ Welcome to my personal E-Portfolio! This repository showcases my background, ski
 ---
 
  👤 About Me
+ 
 Hi! I am Fritz Ian Luke Medina, currently taking up Bachelor of Science in Information Technology (BSIT).  
 I am passionate about technology, creativity, and continuous learning. I enjoy exploring new skills and improving myself both academically and personally.
 
